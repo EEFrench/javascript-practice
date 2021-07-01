@@ -12,6 +12,11 @@ Come in!
 
 
 
+function myFunction() {
+    var str ="Supercalifragilisticexpialidocious";
+    var n = str.length;
+}
+
 
 console.log("Call me Mr Ed");
 console.log("I don't really have a favorite food...");
