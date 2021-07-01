@@ -10,11 +10,13 @@ Come in!
 Come in!
 -Shel Silverstein*/
 
-
+let str = document.getElementById("word");
 
 function myFunction() {
-    var str ="Supercalifragilisticexpialidocious";
+    //var str = document.getElementById("word");
+    //var str = "Supercalifragilisticexpialidocious";
     var n = str.length;
+    document.getElementById("demo").innerHTML = n;
 }
 
 
