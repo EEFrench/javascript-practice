@@ -9,12 +9,38 @@ For we have some flax golden tales to spin
 Come in!
 Come in!
 -Shel Silverstein*/
+let score = 50;
+const strings = "orange";
+const boolean = false;
+score = 100;
 
-let str = document.getElementById("word");
+const objects = {
+    strings: strings,
+    score:score,
+    boolean: boolean,
+    body:  {
+        style: {
+            backgroundColor: "red",
+            color: "black"
+        }
+    }
+}
+
+const array =[strings, score, boolean]
+
+
+document.body.style.backgroundColor = "purple";
+document.body.style.color = strings;
+document.body.style.fontFamily = "arial";
+document.body.style.fontSize = score +"px"; 
+
+
 
 function myFunction() {
     //var str = document.getElementById("word");
     //var str = "Supercalifragilisticexpialidocious";
+    let str = document.getElementById("word").innerText;
+    console.log(str)
     var n = str.length;
     document.getElementById("demo").innerHTML = n;
 }
