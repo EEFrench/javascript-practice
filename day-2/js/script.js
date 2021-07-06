@@ -9,12 +9,14 @@ For we have some flax golden tales to spin
 Come in!
 Come in!
 -Shel Silverstein*/
+
+
 let score = 50;
 const strings = "orange";
 const boolean = false;
-score = 100;
+//score = 100;
 
-const objects = {
+/*const objects = {
     strings: strings,
     score:score,
     boolean: boolean,
@@ -24,7 +26,7 @@ const objects = {
             color: "black"
         }
     }
-}
+}*/
 
 const array =[strings, score, boolean]
 
