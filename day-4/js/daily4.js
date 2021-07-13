@@ -10,30 +10,38 @@ document.title = "Day 4";
 const h1 = document.querySelector("h1");
 h1.innerText = "Compare Numbers";
 
+//PROMPT FOR FIRST NUMBER
 const firstNumber = document.createElement("input");
 firstNumber.type = "number";
 firstNumber.placeholder = "First Number";
 
+//PROMPT FOR SECOND NUMBER
 const secondNumber = document.createElement("input");
 secondNumber.type = "number";
 secondNumber.placeholder = "Second Number";
 
+//CREATE & NAME BUTTON
 const compareButton = document.createElement("button");
 compareButton.innerHTML = "Compare";
 
+//ATTACH PROMPTS & BUTTON TO THE CORRISPONDING CHILDREN 
 document.body.appendChild(firstNumber);
 document.body.appendChild(secondNumber);
 document.body.appendChild(compareButton);
 
+//APPLY A NAME TO THE NUMBER VALUES, THE ERROR APPEARS HERE.
 const numberOne = Number(firstNumber.value);
 const numberTwo = Number(secondNumber.value);
 
+//ADD FUNCTION TO THE BUTTON
 compareButton.addEventListener("click", function () {
+  //LOG THE VALUES TO CONFIRM CODES - SHOWS THAT THE NUMBERS AND NAMES ARE NOT IDENTIFIED RIGHT...
   console.log(numberOne)
   console.log(firstNumber.value)
   console.log(numberTwo)
   console.log(secondNumber.value)
-  //compare();
+  
+  //COMPAIR THE NUMBERS
   if (numberOne > numberTwo) {
     alert((numberOne = " is larger then " + numberTwo));
   } else if (numberTwo > numberOne) {
