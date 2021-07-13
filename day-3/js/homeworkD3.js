@@ -40,7 +40,7 @@ function  SirName (){
 // Alert the user's birthday
 
 function  BDay (){
-    var birthday = prompt("What's Your Last Name?");
+    var birthday = prompt("What's Your Birthday?");
     if (birthday =="") {
         BDay ();
     }
@@ -48,4 +48,5 @@ function  BDay (){
     alert ("Your birthday is " + birthday + "! When's the party?")
 }
 
+console.log ("Is your birthday ", birthday, "?")
 
