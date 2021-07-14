@@ -35,13 +35,15 @@ const numberTwo = Number(secondNumber.value);
 
 //ADD FUNCTION TO THE BUTTON
 compareButton.addEventListener("click", function () {
-  //LOG THE VALUES TO CONFIRM CODES - SHOWS THAT THE NUMBERS AND NAMES ARE NOT IDENTIFIED RIGHT...
+  const numberOne = Number(firstNumber.value);
+  const numberTwo = Number(secondNumber.value);
+//LOG THE VALUES TO CONFIRM CODES - SHOWS THAT THE NUMBERS AND NAMES ARE NOT IDENTIFIED RIGHT...
   console.log(numberOne)
   console.log(firstNumber.value)
   console.log(numberTwo)
   console.log(secondNumber.value)
   
-  //COMPAIR THE NUMBERS
+  //COMPARE THE NUMBERS
   if (numberOne > numberTwo) {
     alert((numberOne = " is larger then " + numberTwo));
   } else if (numberTwo > numberOne) {
@@ -51,6 +53,7 @@ compareButton.addEventListener("click", function () {
   }
 });
 
+//OTHER CODE ATTEMPTS THAT DIDN'T WORK EITHER, BUT I SAVED THEM ANYWAY JUST FOR REFERENCE
 // function compare() {
 //   if (numberOne > numberTwo) {
 //     alert((numberOne = " is larger then " + numberTwo));
