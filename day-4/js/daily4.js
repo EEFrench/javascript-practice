@@ -24,24 +24,25 @@ secondNumber.placeholder = "Second Number";
 const compareButton = document.createElement("button");
 compareButton.innerHTML = "Compare";
 
-//ATTACH PROMPTS & BUTTON TO THE CORRISPONDING CHILDREN 
+//APPLIES PROMPTS & BUTTON TO THE BODY
 document.body.appendChild(firstNumber);
 document.body.appendChild(secondNumber);
 document.body.appendChild(compareButton);
 
-//APPLY A NAME TO THE NUMBER VALUES, THE ERROR APPEARS HERE.
+
 const numberOne = Number(firstNumber.value);
 const numberTwo = Number(secondNumber.value);
 
 //ADD FUNCTION TO THE BUTTON
 compareButton.addEventListener("click", function () {
-  const numberOne = Number(firstNumber.value);
-  const numberTwo = Number(secondNumber.value);
+ //APPLY A NAME TO THE NUMBER VALUES, THE ERROR APPEARS HERE.  const numberOne = Number(firstNumber.value);
+ const numberOne = Number(firstNumber.value);
+ const numberTwo = Number(secondNumber.value);
 //LOG THE VALUES TO CONFIRM CODES - SHOWS THAT THE NUMBERS AND NAMES ARE NOT IDENTIFIED RIGHT...
-  console.log(numberOne)
-  console.log(firstNumber.value)
-  console.log(numberTwo)
-  console.log(secondNumber.value)
+  console.log(numberOne);
+  console.log(firstNumber.value);
+  console.log(numberTwo);
+  console.log(secondNumber.value);
   
   //COMPARE THE NUMBERS
   if (numberOne > numberTwo) {
